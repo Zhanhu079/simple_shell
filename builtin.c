@@ -70,7 +70,7 @@ int _mycd(info_t *info)
 		_eputs(info->argv[1]), _eputchar('\n');
 	}
 	else
-	{i
+	{
 		_setenv(info, "OLDPWD", _getenv(info, "PWD="));
 		_setenv(info, "PWD", getcwd(buffer, 1024));
 	}
